@@ -1,0 +1,186 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="tel"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+  opacity: 1;
+  color : $black-color-opicity-two;
+  @include font-size-height(14);
+  transition: inherit;
+}
+
+::-moz-focus-inner,
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+  transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:focus::-moz-focus-inner {
+  opacity: 1;
+}
+
+a {
+  color: $primary;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+:-moz-placeholder {
+  color: #c7c7c7;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #c7c7c7;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #c7c7c7;
+}
+::-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+  color: #c7c7c7;
+  font-weight: 400;
+  @include font-size-height(13);
+}
+
+:-moz-placeholder {
+  color: #c7c7c7;
+  opacity: 0;
+  font-weight: 400;
+  @include font-size-height(13);
+}
+
+::-moz-placeholder {
+  color: #c7c7c7;
+  opacity: 0;
+  font-weight: 400;
+  @include font-size-height(13);
+}
+
+input:focus::-moz-placeholder {
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c7c7c7;
+  font-weight: 400;
+  @include font-size-height(13);
+}
+
+:-ms-input-placeholder {
+  color: #c7c7c7 !important;
+  font-weight: 400 !important;
+  @include font-size-height(13);
+}
+/* IE1011 */
+::-ms-input-placeholder {
+  color: #c7c7c7;
+  font-weight: 400;
+  @include font-size-height(13);
+}
+/* Edge */
+::placeholder {
+  color: #c7c7c7;
+  font-weight: 400;
+  @include font-size-height(13);
+}
+
+.clear {
+  clear: both;
+}
+em {
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: $font-body;
+  color: $clr-body-900;
+  @include font-size-height(16);
+  letter-spacing: 0px;
+  word-spacing: normal;
+  font-weight: 400;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: $clr-light-gray;
+}
+
+.hidden {
+  display: none;
+}
+//error class
+.error-message {
+  color: $clr-error;
+  @include font-size-height(12);
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+
+  // &:before {
+  //   content: url("^assets/img/errorImg.svg");
+  //   color: #fff;
+  //   margin-right: 4px;
+  //   margin-top: 3px;
+  // }
+}
+
+.bdr-top-gray {
+  border-top: 1px solid #e3e3e3;
+}

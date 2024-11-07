@@ -1,0 +1,165 @@
+
+
+//Box Shadow
+@mixin box-shadow($h: 0px, $v: 0px, $b: 0px, $s: 0px, $c: #eaeaea) {
+  -webkit-box-shadow: $h $v $b $s $c;
+  -moz-box-shadow: $h $v $b $s $c;
+  box-shadow: $h $v $b $s $c;
+}
+@mixin flex-justify{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-center{
+  display: flex;
+  align-items: center;
+}
+@mixin flex-start{
+  display: flex;
+  align-items: flex-start;
+}
+@mixin flex-end{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+//Animation slide from any side
+@mixin slide-animation($name,$direction,$from, $to){
+  animation: 0.7s #{$name};
+  @keyframes #{$name}{
+    from {
+      margin-#{$direction}: $from;
+    }
+    to {
+      margin-#{$direction}: $to;
+    }
+  }
+}
+
+//Button animation mixin
+@mixin buttonWithIcon($url){
+  &:before {
+    content: url("#{$url}");
+    font-size: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: -20px;
+    
+    &:before {
+      opacity: 1;
+      text-indent: 0px;
+    }
+  }
+}
+
+//Typography
+// @mixin text-align($align) {
+//   text-align: $align;
+// }
+
+//Font Size and Line Height
+@mixin font-size-height($sizeValue: 12) {
+	@include font-size($sizeValue);
+  @include line-height($sizeValue + calc($sizeValue / 4));
+}
+
+// @mixin font-size-height1($sizeValue: 12, $heightValue: 18) {
+// 	@include font-size($sizeValue);
+//   @include line-height($heightValue);
+// }
+
+@mixin font-size($sizeValue: 12 ){
+	//font-size: $sizeValue + px; //fallback for old browsers
+	font-size: (0.0625 * $sizeValue) + rem;
+}
+@mixin line-height($heightValue: 18 ){
+	//line-height: $heightValue + px; //fallback for old browsers
+	line-height: (0.0625 * $heightValue) + rem;
+}
+@mixin font-weight($weight) {
+  $weights: (
+    normal: 400,
+    medium: 500,
+    semi-bold: 600,
+    bold: 700,
+
+  );
+  
+  $output: $weight;
+  @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+  }
+  
+  font-weight: $output;
+}
+
+
+// @mixin button($padding:10px 20px, $font-size:16px, $border-radius:3px, $bg-color:#ccc, $font-color:#333) {
+// 	padding:$padding;
+// 	display:inline-block;
+// 	border-radius:$border-radius;
+// 	background:$bg-color;
+// 	font-size:$font-size;
+// 	color:$font-color;
+// }
+
+// .btn {
+// 	@include button;
+// }
+
+// .btn-large {
+// 	@include button(20px 30px, 22px);
+// }
+
+
+//Padding mixin
+@mixin padding($top, $right, $bottom, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-bottom: $bottom;
+  padding-left: $left;
+}
+//Margin mixin
+@mixin margin($top, $right, $bottom, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-bottom: $bottom;
+  margin-left: $left;
+}
+
+// $mobile-small  : "$small-mobile-width  : 480px";
+// $mobile        : "$mobile-width        : 576px";
+// $tablet        : "$tablet-width        : 768px";
+// $laptop        : "$laptop-width        : 992px";
+// $desktop       : "$desktop-width       : 1200px";
+
+@mixin for-small-phone {
+  @media (max-width: $small-mobile-width) { @content; }
+}
+@mixin for-phone {
+  @media (max-width: $mobile-width) { @content; }
+}
+@mixin for-tablet{
+  @media (max-width: $tablet-width) { @content; }
+}
+@mixin for-laptop {
+  @media (max-width: $laptop-width) { @content; }
+}
+@mixin for-desktop {
+  @media (max-width:  $desktop-width) { @content; }
+}
+
+

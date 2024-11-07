@@ -1,0 +1,100 @@
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+    $main-color: rgb(223,3,3);
+    $main-color-two: rgb(1,12,58);
+    $main-color-three: rgb(0,45,91);
+    $main-color-four: rgb(255,98,6);
+    $main-color-five: rgb(242,142,39);
+    $main-color-six: rgb(23,63,207);
+    $main-color-seven: rgb(229,3,238);
+    $main-color-eight: rgb(255,241,255);
+    $main-color-nine: rgb(21,0,95);
+    $main-color-ten: rgb(0,202,255);
+    $main-color-eleven: rgb(1,62,255);
+    $main-color-twelve: rgb(213,64,31);
+    $main-color-thirteen: rgb(24,156,252);
+    $main-color-fourteen: rgb(51,51,51);
+    $main-color-fifteen: rgb(230,42,91);
+    $main-color-sixteen: rgb(187,11,11);
+    $main-color-seventeen: rgb(67,37,104);
+    $main-color-eighteen: rgb(229,42,91);
+    $main-color-nineteen: rgb(233,42,91);
+    $main-color-twenty: rgb(68,68,69);
+    $main-color-twentyone: rgb(119,119,120);
+    $main-color-twentytwo: rgb(50,38,104);
+    $main-color-rgba: rgb(223,3,3,0.40);
+    $white-color: rgb(255,255,255);
+    $white-color-opicity: rgba(255,255,255,0.80);
+    $white-color-opicity-two: rgba(255,255,255,0.40);
+    $white-color-opicity-three: rgba(255,255,255,0.20);
+    $black-color: rgb(0,0,0);
+    $black-color-opicity: rgba(0,0,0,0.80);
+    $black-color-opicity-two: rgba(0,0,0,0.40);
+    $dark-color: rgb(37,37,37);
+    $dark-color-two: rgb(34,34,34);
+    $dark-color-three: rgb(0,5,34);
+    $heading-color: rgb(1,1,1);
+    $dark-color-two: rgb(1,1,1);
+    $dark-color-three: rgb(6,11,19);
+    $dark-color-four: rgb(1,0,72);
+    $dark-color-five: rgb(14,22,61);
+    $dark-color-six: rgb(11,19,57);
+    $dark-color-seven: rgb(7,13,49);
+    $dark-color-eight: rgb(24,31,67);
+    $anchor-color: #505050;
+
+
+$primary:       $blue;
+//$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       #c36c02;
+$danger:        $red;
+//$light:         $gray-100;
+//$dark:     #c36b02     $gray-900;
+
+//Grayscale colors
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$clr-body-900  : #27313d;  //default body color
+$clr-body-700  : #4c5a6f;
+$clr-white     : #ffffff;
+$clr-black     : #000000;
+$clr-primary   : #0b6bff;
+$clr-light-gray: #fafafa;
+$clr-error     : #d32828;
+$clr-light-blue: #dce7ff;
+// $clr-#5e6c84;
+
+$font-body    :  "Poppins", sans-serif;
+
+$system-font-for-rupee : system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$image-path : "^assets/img";
+// $image-html-path : "assets/img/";
+
+$small-mobile-width  : 480px;
+$mobile-width        : 576px;
+$tablet-width        : 768px;
+$laptop-width        : 992px;
+$desktop-width       : 1200px;
+

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "src": "../src/assets/1 (1).png",
+        "name": "WiFi Streaming Router",
+        "price": "$33.40",
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "src": "../src/assets/2 (1).png",
+        "name": "Ultra HD 2GB+8GB TV Box",
+        "price": "$35.80",
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "src": "../src/assets/3 (1).png",
+        "name": "Bluetooth Speaker",
+        "price": "$36.20",
+        "link": "#"
+    },
+    {
+        "id": 4,
+        "src": "../src/assets/4 (1).png",
+        "name": "Nest Cam Indoor",
+        "price": "$38.50",
+        "link": "#"
+    }
+]
