@@ -61,7 +61,7 @@ const aboveFold = () => {
                       <h1>Ultimate control of your internet</h1>
                       <div className="btns-box">
                         <a href="#" className="btn btn-primary magic-btn"><span>Read More <IoIosArrowRoundForward /></span> </a>
-                        <a href="#" className="btn btn-secondary magic-btn"><span>Contact Now <IoIosArrowRoundForward /></span> </a>
+                        <a href="#"  className="btn btn-secondary magic-btn"><span>Contact Now <IoIosArrowRoundForward /></span> </a>
                       </div>
                     </div>
                   </div>
