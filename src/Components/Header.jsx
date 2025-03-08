@@ -1,4 +1,3 @@
-import React from 'react'
 import {FaMobileRetro, FaEnvelope} from "react-icons/fa6"
 import {FaFacebookF,FaTwitter,FaLinkedinIn} from "react-icons/fa"
 import {AiFillInstagram} from "react-icons/ai";
@@ -12,7 +11,7 @@ import { useState } from 'react';
 import Mainpopup from './Main-popup';
 import SearchPopup from './Search-popup';
 
-const Header = (props) => {
+const Header = () => {
   const [iScart, setiSCart] = useState(false);
   const [mainMenu, setMainMenu] = useState(false);
   const [isSearch, setIsSearch] = useState(false);
@@ -78,7 +77,7 @@ const Header = (props) => {
           <div className='auto-container'>
             <div className='header-nav'>
               <div className='logo'>
-                <a href='#'>
+                <a href='/'>
                   <img alt='logo' width="" src={logo} />
                 </a>
               </div>
@@ -86,7 +85,7 @@ const Header = (props) => {
                 <nav>
                   <ul>
                     <li>
-                      <a href='#' className="active">home</a>
+                      <a href='/' className="active">home</a>
                     </li>
                     <li>
                       <a href='#'>about</a>

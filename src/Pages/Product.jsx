@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../Components/Header'
 import OnlineStore from '../Components/onlineStore'
 import FooterCTA from '../Components/footerCTA'
