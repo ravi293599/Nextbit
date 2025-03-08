@@ -1,4 +1,3 @@
-import React from 'react'
 import AwesomeSlider from 'react-awesome-slider'
 import slider1 from "../assets/slider_1.jpg"
 import slider2 from "../assets/slider_2.jpg"
