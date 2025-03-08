@@ -1,8 +1,25 @@
-# React + Vite
+# NextBit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a internet provider website in which he displayed all the services provided by their company
+This website has following things
+-Slider
+-CTA
+-Service highlights
+-About Us Section
+-Pricing of services
+-facility Section
+-Testimonials
 
-Currently, two official plugins are available:
+Also this is also online shop for sales and purchase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## TechStack
+I used following tech for building this
+-Vite for setup the project
+-React for the UI
+-Custom SASS for Styling
+
+## Checkout the Live Link
+
+https://nextbit-ravi.netlify.app/
+
+
